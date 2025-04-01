@@ -14,3 +14,25 @@ The detailed objectives of the project include:
     ●	To evaluate the performance of the developed feature in different scenarios and refine the model to improve accuracy and reliability.
     ●	To ensure the solution integrates seamlessly with existing data processing workflows.
 
+# Risk Assessment and Mitigation Strategies
+![image](https://github.com/user-attachments/assets/dca1566c-4562-4853-9183-ff84e160aa11)
+Redaction and identification of Personally Identifiable Information (PII) are essential when processing sensitive data in order to protect privacy and guarantee adherence to laws such as the GDPR. If disclosed, personally identifiable information (PII) such as names, email addresses, phone numbers, addresses, job titles, and more may result in identity theft, financial fraud, or privacy issues.
+
+# Technical Stack
+
+Python: Used for its rich libraries in machine learning and natural language processing (NLP).
+
+NLP Techniques: Tokenization, stemming, lemmatization, and stopword removal to preprocess and clean text for PII detection.
+
+TF-IDF: Converted text to numerical features, emphasizing important terms for PII like names and emails.
+
+Machine Learning Models: Logistic Regression for multi-label classification; Random Forest performed best due to its robustness in handling noisy data.
+
+SMOTE: Addressed class imbalance by generating synthetic data for underrepresented PII categories.
+
+Cross-Validation: Ensured model robustness and prevented overfitting through k-fold cross-validation.
+![image](https://github.com/user-attachments/assets/817f28d7-aca0-469d-9916-0d47e067c0e6)
+
+
+
+
