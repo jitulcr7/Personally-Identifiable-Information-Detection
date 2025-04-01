@@ -20,27 +20,43 @@ Redaction and identification of Personally Identifiable Information (PII) are es
 
 # Technical Stack
 
-Python: Used for its rich libraries in machine learning and natural language processing (NLP).
+**Python:** Used for its rich libraries in machine learning and natural language processing (NLP).
 
-NLP Techniques: Tokenization, stemming, lemmatization, and stopword removal to preprocess and clean text for PII detection.
+**NLP Techniques:** Tokenization, stemming, lemmatization, and stopword removal to preprocess and clean text for PII detection.
 
-TF-IDF: Converted text to numerical features, emphasizing important terms for PII like names and emails.
+**TF-IDF:** Converted text to numerical features, emphasizing important terms for PII like names and emails.
 
-Machine Learning Models: Logistic Regression for multi-label classification; Random Forest performed best due to its robustness in handling noisy data.
+**Machine Learning Models:** Logistic Regression for multi-label classification; Random Forest performed best due to its robustness in handling noisy data.
 
-SMOTE: Addressed class imbalance by generating synthetic data for underrepresented PII categories.
+**SMOTE:** Addressed class imbalance by generating synthetic data for underrepresented PII categories.
 
-Cross-Validation: Ensured model robustness and prevented overfitting through k-fold cross-validation.
+**Cross-Validation:** Ensured model robustness and prevented overfitting through k-fold cross-validation.
 
 # NLP Techniques Impact:
 
-Tokenization: Helped split the text into manageable units (tokens). This allowed the models to analyze each word individually, which improved precision in detecting specific PII categories (e.g., names, emails).
+**Tokenization:** Helped split the text into manageable units (tokens). This allowed the models to analyze each word individually, which improved precision in detecting specific PII categories (e.g., names, emails).
 
-Stemming and Lemmatization: Reduced words to their base forms, helping the models recognize variations of the same word (e.g., "address" vs. "addresses"). This improved the recall of certain PII types.
+**Stemming and Lemmatization:** Reduced words to their base forms, helping the models recognize variations of the same word (e.g., "address" vs. "addresses"). This improved the recall of certain PII types.
 
-Stopword Removal: By removing irrelevant words like “the” or “is,” the models focused on more meaningful terms, which enhanced precision, especially in detecting identifiers like names and job titles.
+**Stopword Removal:** By removing irrelevant words like “the” or “is,” the models focused on more meaningful terms, which enhanced precision, especially in detecting identifiers like names and job titles.
 
-TF-IDF (Term Frequency-Inverse Document Frequency): Provided a numerical representation of the text based on word importance. This significantly improved model performance by helping the models prioritize important PII-related terms and ignore less relevant words.
+**TF-IDF (Term Frequency-Inverse Document Frequency):** Provided a numerical representation of the text based on word importance. This significantly improved model performance by helping the models prioritize important PII-related terms and ignore less relevant words.
+
+# Conclusion 
+
+**Key Achievements:**
+Successfully developed and implemented a PII detection and redaction feature using machine learning and natural language processing (NLP) techniques.
+The Random Forest model emerged as the best performer in detecting multiple PII categories from unstructured text due to its ability to handle noisy and complex data.
+
+**Challenges Faced:**
+Data Imbalance: Class imbalance was a significant challenge, with some PII categories being underrepresented. This was addressed using the SMOTE technique, which improved recall for minority classes like phone numbers.
+Noisy Data: Handling noisy and unstructured text was difficult, particularly for models like SVM and Logistic Regression, which struggled with ambiguous data.
+
+**Model Performance:**
+Random Forest outperformed other models due to its flexibility and robustness in managing multi-label classification for diverse PII categories.
+Logistic Regression and SVM were effective in linear cases but less capable of dealing with noisy, complex data.
+
+
 
 
 
