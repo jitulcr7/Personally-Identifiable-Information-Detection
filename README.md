@@ -31,7 +31,18 @@ Machine Learning Models: Logistic Regression for multi-label classification; Ran
 SMOTE: Addressed class imbalance by generating synthetic data for underrepresented PII categories.
 
 Cross-Validation: Ensured model robustness and prevented overfitting through k-fold cross-validation.
-![image](https://github.com/user-attachments/assets/817f28d7-aca0-469d-9916-0d47e067c0e6)
+
+# NLP Techniques Impact:
+
+Tokenization: Helped split the text into manageable units (tokens). This allowed the models to analyze each word individually, which improved precision in detecting specific PII categories (e.g., names, emails).
+
+Stemming and Lemmatization: Reduced words to their base forms, helping the models recognize variations of the same word (e.g., "address" vs. "addresses"). This improved the recall of certain PII types.
+
+Stopword Removal: By removing irrelevant words like “the” or “is,” the models focused on more meaningful terms, which enhanced precision, especially in detecting identifiers like names and job titles.
+
+TF-IDF (Term Frequency-Inverse Document Frequency): Provided a numerical representation of the text based on word importance. This significantly improved model performance by helping the models prioritize important PII-related terms and ignore less relevant words.
+
+
 
 
 
