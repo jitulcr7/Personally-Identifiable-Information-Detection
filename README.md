@@ -7,9 +7,9 @@ The PII Data Detection project is centred on the creation of a feature that anal
 # Objective
 The use case of the Personally Identifiable Information (PII) Data Detection project is the creation of a sophisticated feature that can recognize, classify, and mask PII in raw text with ML and NLP. This project solves the challenge of ensuring that organisations respect individuals’ privacy and meet the global and regional high standards on data protection.
 The detailed objectives of the project include:
-●	To design an efficient PII detection algorithm that can accurately identify various forms of PII within unstructured text.
-●	To categorize identified PII into direct identifiers and quasi-identifiers to tailor redaction strategies appropriately.
-●	To implementing a robust redaction mechanism to effectively mask sensitive information while preserving data utility.
-●	To evaluate the performance of the developed feature in different scenarios and refine the model to improve accuracy and reliability.
-●	To ensure the solution integrates seamlessly with existing data processing workflows.
+    ●	To design an efficient PII detection algorithm that can accurately identify various forms of PII within unstructured text.
+    ●	To categorize identified PII into direct identifiers and quasi-identifiers to tailor redaction strategies appropriately.
+    ●	To implementing a robust redaction mechanism to effectively mask sensitive information while preserving data utility.
+    ●	To evaluate the performance of the developed feature in different scenarios and refine the model to improve accuracy and reliability.
+    ●	To ensure the solution integrates seamlessly with existing data processing workflows.
 
